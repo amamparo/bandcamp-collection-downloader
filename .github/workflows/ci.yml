@@ -1,0 +1,14 @@
+name: CI
+on: [ workflow_dispatch, push ]
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'
+      - uses: snok/install-poetry@v1
+      - run: make install
+      - run: make lint
+      - run: make test

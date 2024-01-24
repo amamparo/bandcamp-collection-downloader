@@ -1,0 +1,6 @@
+{
+   "disable-features": "SearchEngineChoice\u003CWaffleStudy,SearchEngineChoiceFre\u003CWaffleStudy,SearchEngineChoiceTrigger\u003CWaffleStudy",
+   "enable-features": "UkmSamplingRate\u003CUkmSamplingRate",
+   "force-fieldtrial-params": "UkmSamplingRate.Sampled_NoSeed_Stable:_default_sampling/1000000",
+   "force-fieldtrials": "UkmSamplingRate/Sampled_NoSeed_Stable/*WaffleStudy/Default"
+}
